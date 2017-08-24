@@ -6,14 +6,19 @@ import { AppComponent }   from './app.component';
 import { LoginService }   from './login/login.service';
 import { LoginComponent } from './login/login.component';
 
+import { RoutingModule }  from './routing/routing.module';
+import { AdminComponent } from './admin/admin.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RoutingModule
   ],
   providers: [
     LoginService
